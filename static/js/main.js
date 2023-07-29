@@ -238,7 +238,7 @@
             window.mcStatus.classList.remove('error-message', 'success-message')
             window.mcStatus.innerText = 'Submitting...';
             
-            fetch('subscribe/', {
+            fetch('/subscribe/', {
                 method: 'POST',
                 body: JSON.stringify({
                     EMAIL: emailField.value
