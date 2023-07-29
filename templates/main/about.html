@@ -1,0 +1,125 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+{% block content %}
+
+
+<!-- # site main content
+================================================== -->
+<section id="content" class="s-content">
+
+        <section class="s-pageheader pageheader">
+            <div class="row">
+                <div class="column xl-12">
+                    <h1 class="page-title">
+                        <span class="page-title__small-type text-pretitle">About</span>
+                        Hi, I'm Chert
+                    </h1>
+                    
+                </div>
+            </div>
+        </section> <!-- end pageheader --> 
+
+        <section class="s-pagecontent pagecontent">
+
+            <div class="row pageintro">
+                <div class="column xl-6 lg-12">
+                    <h2 class="text-display-title">Your Partner in Transforming Ideas into Reality</h2>
+                </div>
+                <div class="column xl-6 lg-12 u-flexitem-x-right">
+                    <p class="lead">
+                    I'm Chert, a proficient Python developer with a focus on web development using Django. 
+                    I have honed my skills in building scalable, robust, and secure web applications that
+                    cater to client needs and create impactful user experiences.
+                    </p>
+                </div>                       
+            </div> <!-- end pageintro -->   
+            
+            <div class="row pagemedia">
+                <d class="column xl-12">
+                    <figure class="page-media">                                
+                        <img src="{% static 'img/thumbs/about/about-1200.jpg' %}"
+                        srcset="{% static 'img/thumbs/about/about-2400.jpg' %} 2400w,
+                        {% static 'img/thumbs/about/about-1200.jpg' %} 1200w,
+                        {% static 'img/thumbs/about/about-600.jpg' %} 600w"
+                        sizes="(max-width: 2400px) 100vw, 2400px"
+                        alt="">
+                    </figure>
+                </d>
+            </div> <!-- end pagemedia -->
+
+            <div class="row width-narrower pagemain">
+                <div class="column xl-12"> 
+
+                    <h2>How I Got Here</h2>
+                    <p>
+                        Starting my career as a construction engineer, I was always fascinated by problem-solving and design. This led me to discover the world of coding, where I found a passion for creating and innovating. Trading blueprints for code, I transitioned into web development and haven't looked back since.
+                    </p>
+
+                    <h2 class="u-add-bottom">My Values & Beliefs</h2>
+
+                    <div class="grid-list-items list-items">
+                        <div class="grid-list-items__item list-items__item u-remove-bottom">
+                            <div class="list-items__item-header">
+                                <h6 class="list-items__item-small-title">Lifelong Learning</h6>
+                            </div>
+                            <p>
+                                Technology evolves rapidly, and so do I. Continuous learning is key to staying relevant.
+                            </p>
+                        </div>
+                        <div class="grid-list-items__item list-items__item u-remove-bottom">
+                            <div class="list-items__item-header">
+                                <h6 class="list-items__item-small-title">Quality Over Quantity</h6>
+                            </div>
+                            <p> 
+                               I believe in delivering top-notch work that stands the test of time.
+                            </p>
+                        </div>
+                        <div class="grid-list-items__item list-items__item u-remove-bottom">
+                            <div class="list-items__item-header">
+                                <h6 class="list-items__item-small-title">Collaboration</h6>
+                            </div>
+                            <p>
+                                Great things are rarely achieved alone. Teamwork and open communication are crucial.
+                            </p>
+                        </div>
+                        <div class="grid-list-items__item list-items__item u-remove-bottom">
+                            <div class="list-items__item-header">
+                                <h6 class="list-items__item-small-title">Innovation</h6>
+                            </div>
+                            <p>
+                                I strive to push boundaries, exploring new tools and technologies to drive progress.
+                            </p>
+                        </div>
+                    </div> <!--grid-list-items -->
+
+                    <h2>Why Work With Me</h2>
+                    <p>
+                        With my unique background and commitment to excellence, I bring a fresh perspective to web development. I offer tailored solutions, meeting your needs with creativity and technical expertise.
+                    </p>
+
+                    <p>
+                    Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem 
+                    eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit. 
+                    Numquam, corporis accusamus commodi saepe nostrum nesciunt nisi rem necessitatibus unde laboriosam molestias, quam ipsa voluptatum sed 
+                    ex cumque facilis assumenda maiores tempore reiciendis enim accusantium?
+                    </p>                   
+
+                    <h2>A Few More Words About Myself</h2>
+                    <p>
+                        Beyond my love for coding, I am a curious explorer, always looking for new challenges and ways to grow. In my free time, you can find me delving into the latest tech trends, exploring nature, or spending quality time with my loved ones.
+                    </p>
+
+                </div> <!-- end grid-block-->
+            </div> <!-- end pagemain -->
+
+        </section> <!-- pagecontent -->
+
+       
+
+</section> <!-- s-content-->
+
+{% include "cta.html" %}
+
+{% endblock %}
